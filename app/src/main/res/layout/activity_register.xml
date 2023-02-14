@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg">
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toEndOf="@+id/usernameTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/passwordTextView"
+        app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
+
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/confirmPasswordTextView"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="@dimen/register_button_width"
+        android:layout_height="@dimen/register_button_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/background_dark"
+        android:fontFamily="@font/nova_square"
+        android:text="@string/register_txt"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText" />
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/nova_square"
+        android:text="@string/username_label"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/username_text_view_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/nova_square"
+        android:text="@string/password_label"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/password_text_view_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTextView" />
+
+    <TextView
+        android:id="@+id/confirmPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/nova_square"
+        android:text="@string/confirm_pass_label"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/confirm_password_text_view_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
